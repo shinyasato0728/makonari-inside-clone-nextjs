@@ -33,7 +33,19 @@ export default class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="152x152"  href="/static/android-icon.png" />
           <script src="https://kit.fontawesome.com/5d32fd4d7d.js" crossOrigin="anonymous" />
           {isProduction && (
-            {/* GAの設定を書き込む */}
+            <Fragment>
+              <script async src="https://www.googletagmanager.com/gtag/js?id=xxxxxxx" />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'UA-xxxxxxx', { 'optimize_id': 'GTM-xxxxxxx'});
+                `
+                }}
+              />
+            </Fragment>
           )}
         </Head>
         <body>
