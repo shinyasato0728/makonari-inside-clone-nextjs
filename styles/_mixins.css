@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+@define-mixin breakPcWidth {
+  width: 100%;
+  padding-left: $space-small;
+  padding-right: $space-small;
+}
+
+@define-mixin smartphoneWidth {
+  width: 100%;
+  padding-left: $space-xsmall;
+  padding-right: $space-xsmall;
+}

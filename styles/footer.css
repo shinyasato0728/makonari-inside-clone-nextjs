@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+@import './_vars.css';
+@import './_mixins.css';
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background: $black;
+  padding: $space-medium 0;
+  @media(--smartphone) { 
+    padding-bottom: 96px;
+  }
+  & .footer__box {
+    width: $large-width;
+    @media(--breakPC) {
+      @mixin breakPcWidth;
+    }
+    @media(--smartphone) { 
+      @mixin smartphoneWidth;
+      padding-bottom: env(safe-area-inset-bottom); 
+    }
+    & a, & small {
+      font-size: 12px;
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@charset 'utf-8';
+
+/* breakPC */
+@custom-media --breakPC (width <= 1024px);
+
+/* iPad */
+@custom-media --iPad (width <= 767px);
+
+/* smartphone */
+@custom-media --smartphone (width <= 640px);
+
+/* smartphoneSS */
+@custom-media --smartphoneSS (width <= 360px);
+
+$base-font-family: YakuHanJP, 'Noto Sans JP', sans-serif; 
+
+/* font-size */
+$base-font-size: 18px;
+
+/* width */
+$large-width: 960px;
+$small-width: 600px;
+
+/* border-radius */
+$radius: 8px;
+
+/* font-weight */
+$fw-medium: 400;
+$fw-bold: 700;
+$fw-exbold: 900;
+
+/* color */
+$white: #ffffff;
+$black: #000000;
+$darkblue: #141f33;
+$darker: #202124;
+$darkgray: #545C6B;
+$lightgray: #898F99;
+$lighter: #e7e8ea;
+$lightest: #f8f8f9;
+
+/* space */
+$space-xxsmall: 8px;
+$space-xsmall: 16px;
+$space-small: 24px;
+$space-medium: 32px;
+$space-large: 40px;
+$space-xlarge: 48px;
+$space-xxlarge: 56px;
+$space-xxxlarge: 64px;

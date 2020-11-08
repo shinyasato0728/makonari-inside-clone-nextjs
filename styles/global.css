@@ -1,0 +1,123 @@
+@charset 'utf-8';
+
+@import './_vars.css';
+@import './_mixins.css';
+
+@reset-global pc;
+
+* { 
+  box-sizing: border-box;
+}
+
+html { 
+  position: relative; 
+  min-height: 100%;
+}
+
+body { 
+  display: flex; 
+  flex-direction: column; 
+  line-height: 2;
+  color: $darker; 
+  font-size: $base-font-size;
+  font-feature-settings: "palt";
+  letter-spacing: 1px; 
+  font-family: $base-font-family;
+  @media(--smartphone) {
+    font-size: 16px;
+  }
+}
+
+main {
+  flex: 1 0 auto; 
+  padding-top: 70px;
+  padding-bottom: 220px;
+  width: $large-width;
+  margin: auto;
+  @media(--breakPC) {
+    @mixin breakPcWidth;
+  }
+  @media(--smartphone) { 
+    padding-top: unset;
+    padding-bottom: 260px;
+    @mixin smartphoneWidth;
+  }
+}
+
+img { 
+  vertical-align: bottom; 
+  max-width: 100%;
+}
+
+a { 
+  transition: 0.3s;
+  color: $darker; 
+  display: inline-block; 
+  word-break: break-all;
+  text-decoration: none;
+  &:hover { 
+    opacity: 0.4;
+  }
+}
+
+button { 
+  transition: 0.3s;
+  background: unset; 
+  border: unset; 
+  outline: unset; 
+  padding: unset;
+  cursor: pointer;
+  &:disabled {
+    opacity: 0.2;
+  }
+}
+
+h1 {
+  width: 100%; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  font-size: 40px; 
+  font-weight: $fw-exbold; 
+  margin-bottom: 20px; 
+  line-height: 1.5;
+  @media(--iPad) {
+    font-size: 32px;
+  }
+  @media(--smartphone) {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  width: 100%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 32px; 
+  font-weight: $fw-bold; 
+  margin-bottom: 16px; 
+  line-height: 1.5;
+  @media(--iPad) {
+    font-size: 28px;
+  }
+  @media(--smartphone) {
+    font-size: 24px;
+  }
+}
+
+hr { 
+  margin: 80px auto; 
+  border: 0;
+  border-top: 1px solid $darkgray;
+  @media(--smartphone) { 
+    margin: $space-xxxlarge 0;
+  }
+}
+
+.index__title {
+  font-size: 34px;
+  @media(--smartphone) {
+    font-size: 28px;
+  }
+}

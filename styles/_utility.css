@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+@import './_vars.css';
+
+/* width */
+.u-w-small {
+  width: $small-width;
+  @media(--smartphone) {
+    width: 100%;
+  }
+}
+
+/* display */
+.u-d-flex { display: flex !important;}
+.u-d-flex-wp { flex-wrap: wrap !important;}
+.u-jc-c { justify-content: center !important;}
+.u-jc-fs { justify-content: flex-start !important;}
+.u-jc-sb { justify-content: space-between !important;}
+.u-ai-c { align-items: center !important;}
+
+/* border */
+.u-b-lighter { border: 1px solid $lighter !important;}
+.u-b-darkgray { border: 1px solid $darkgray !important;}
+.u-bt-lightest { border-top: 2px solid $lightest !important;}
+
+/* active */
+.u-active-link { opacity: 0.3 !important;}
