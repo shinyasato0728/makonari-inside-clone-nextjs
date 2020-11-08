@@ -8,6 +8,7 @@
 - [Next.js](https://nextjs.org/)
 - [PostCSS](https://postcss.org/)
 - [Firebase](https://firebase.google.com/?hl=ja)
+- [Netlify](https://www.netlify.com/)
 
 # Version
 
@@ -37,6 +38,11 @@ FIREBASE_MEASUREMENT_ID=xxxxxx
 2. 「アプリを追加」>「ウェブ」を選択して、設定を完了させる。
 3. 左上の歯車アイコンをクリックし「プロジェクトを設定」をクリック。
 4. 表示されたページの「Firebase SDK snippet」を「構成」に変更する。
+
+## Netlifyの設定方法
+
+1. 「Site settings」>「Build & Deploy」
+2. 「Environment」に、Firebaseの設定を書き込み保存する。
 
 # 起動方法
 
