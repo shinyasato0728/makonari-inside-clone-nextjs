@@ -32,10 +32,10 @@ header {
     & div {
       @media(--smartphone) {
         &:nth-child(1) {
-          width: 75%;
+          width: 33%;
         }
         &:nth-child(2) {
-          width: 25%;
+          width: 67%;
         }
       }
       & a, & button {
